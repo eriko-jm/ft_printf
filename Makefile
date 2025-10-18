@@ -23,6 +23,7 @@ LIBFT = $(LIBFT_DIR)/libft.a
 SRCS = 	printf_dec.c \
 		printf_char.c \
 		printf_hex.c \
+		ft_printf.c \
 
 OBJS = $(SRCS:.c=.o)
 

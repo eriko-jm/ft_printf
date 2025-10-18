@@ -21,5 +21,6 @@ int	printf_char(int c);
 int	print_hex_upp(unsigned int nb);
 int	print_ptr(void *ptr);
 int	print_hex_low(unsigned int nb);
+int	ft_printf(char const *str, ...);
 
 #endif
