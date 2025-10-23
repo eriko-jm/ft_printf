@@ -6,7 +6,7 @@
 #    By: joaseque <joaseque@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/10/16 13:01:09 by joaseque          #+#    #+#              #
-#    Updated: 2025/10/16 19:05:16 by joaseque         ###   ########.fr        #
+#    Updated: 2025/10/18 17:32:38 by joaseque         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	$(MAKE) -C $(LIBFT_DIR)
 	cp $(LIBFT) $(NAME)
-	$(AR) $(NAME) $(OBJS)
+	$(AR) $(ARFLAGS) $(NAME) $(OBJS)
 
 %.o : %.c ft_printf.h
 	$(CC) $(CFLAGS) -c $< -o $@

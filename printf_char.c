@@ -6,7 +6,7 @@
 /*   By: joaseque <joaseque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 15:33:46 by joaseque          #+#    #+#             */
-/*   Updated: 2025/10/16 15:33:51 by joaseque         ###   ########.fr       */
+/*   Updated: 2025/10/18 17:54:46 by joaseque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ int	printf_str(char *s)
 {
 	int	i;
 
+	if (!s)
+		return (write(1, "(null)", 6));
 	i = ft_strlen(s);
 	write (1, s, i);
 	return (i);

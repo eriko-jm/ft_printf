@@ -6,7 +6,7 @@
 /*   By: joaseque <joaseque@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 16:16:40 by joaseque          #+#    #+#             */
-/*   Updated: 2025/10/16 18:46:40 by joaseque         ###   ########.fr       */
+/*   Updated: 2025/10/18 18:05:42 by joaseque         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,13 +73,13 @@ int	print_ptr(void *ptr)
 	unsigned long	num;
 	unsigned long	tmp;
 
-	write(1, "0x", 2);
-	len = 2;
 	if (ptr == NULL)
 	{
-		write(1, "0", 1);
-		return (3);
+		write(1, "(nil)", 5);
+		return (5);
 	}
+	write(1, "0x", 2);
+	len = 2;
 	num = (unsigned long) ptr;
 	putnbr_base(num, "0123456789abcdef", 1);
 	tmp = num;
